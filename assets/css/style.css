@@ -2,7 +2,7 @@
   text-shadow: 0 0 5px black, 0 0 20px black;
 }
 
-.header, .left-sidebar {
+.header, .main, .left-sidebar {
   margin-bottom: 80px;
 }
 
@@ -86,6 +86,24 @@ a:hover {
   color: #df8a13;
 }
 
+h1 {
+  margin: -7.5px 0 45px;
+  font-family: "PT Serif", serif;
+}
+
+h1:after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 .header-logo {
   padding: 100px 0;
   background-image: url(../img/header-bg.jpg);
@@ -106,6 +124,37 @@ a:hover {
   font-size: 1.15rem;
   letter-spacing: 0.2em;
   color: #ffffff;
+}
+
+.main .site-search {
+  margin-bottom: 45px;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.new-films-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.new-films-item {
+  margin-bottom: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+.new-films-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.new-films-item__thumbnail {
+  margin-bottom: 0;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -165,7 +214,46 @@ a:hover {
   margin-bottom: 15px;
 }
 
+.top-films-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.top-films-list {
+  padding: 0;
+}
+
+.top-films-item {
+  padding: 0;
+  background-color: transparent;
+  color: #165690;
+}
+
+.top-films-item:first-child {
+  border-top: none;
+  border-radius: 0;
+}
+
+.top-films-item:last-child {
+  border-bottom: none;
+  border-radius: 0;
+}
+
+.top-films-item a {
+  display: block;
+  padding: 10px 40px 10px 15px;
+}
+
+.top-films__badge {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+
 @media (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
   .header-logo__title {
     letter-spacing: 0.33em;
     font-size: 3.5rem;
@@ -201,6 +289,9 @@ a:hover {
 }
 
 @media (max-width: 575.8px) {
+  h1 {
+    font-size: 2rem;
+  }
   .header-logo__title {
     letter-spacing: 0.2em;
     font-size: 2.5rem;

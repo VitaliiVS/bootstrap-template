@@ -53,3 +53,41 @@
         margin-bottom: 15px;
     }
 }
+.top-films {
+
+    &-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &-list {
+        padding: 0;
+    }
+
+    &-item {
+
+        padding: 0;
+        background-color: transparent;
+        color: $color-primary;
+
+        &:first-child {
+            border-top: none;
+            border-radius: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+            border-radius: 0;
+        }
+        a {
+            display: block;
+            padding: 10px 40px 10px 15px;
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        right: 15px;
+        top: 12px;
+    }
+}
